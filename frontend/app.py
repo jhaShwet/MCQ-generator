@@ -15,7 +15,7 @@ if 'selected_option' not in st.session_state:
 
 # Button to generate MCQ
 if st.button("Generate MCQ"):
-    response = requests.post("http://127.0.0.1:8000/generate/", json={"topic": topic})
+    response = requests.post("http://34.211.200.85:10000/generate/", json={"topic": topic})
     if response.status_code == 200:
         st.session_state.question_data = response.json()
         st.write("Question:", st.session_state.question_data["question"])
