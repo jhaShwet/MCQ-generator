@@ -35,7 +35,7 @@ if st.session_state.question_data:
     if st.button("Submit Answer"):
         if st.session_state.selected_option:
             question_id = st.session_state.question_data["id"]
-            submit_response = requests.post("https://backend-app1-0icr.onrender.com/generate//submit_answer/", json={
+            submit_response = requests.post("https://backend-app1-0icr.onrender.com/submit_answer/", json={
                 "question_id": question_id,
                 "answer": st.session_state.selected_option
             })
