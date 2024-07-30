@@ -31,7 +31,7 @@ MCQ Generator is a web application that lets users generate multiple-choice ques
 
 # Hosting:
 
-- GitHub: Repository management.
+- GitHub: # https://github.com/jhaShwet/MCQ-generator/
 - Render: Deployment of the application
 - Generate MCQs on a given topic.
 - Search for related topics.
