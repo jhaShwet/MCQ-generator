@@ -1,4 +1,4 @@
-** MCQ Generator **
+## MCQ Generator ##
 
 MCQ Generator is a web application that lets users generate multiple-choice questions (MCQs) on a given topic, search for related topics, and submit answers. It uses FastAPI for the backend and Streamlit for the frontend.
 
