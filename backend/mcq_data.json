@@ -1,0 +1,244 @@
+{
+    "1": {
+      "topic": "mcq",
+      "question": "Question: Which of the following are animals that do not respond to being pulled on by other animals?",
+      "options": [
+        "Animals that do not respond to being pulled on by other animals through",
+        "1. insects",
+        "2. snails",
+        "3. dogs",
+        "4. cows"
+      ],
+      "user_answer": ""
+    },
+    "2": {
+      "topic": "mine",
+      "question": "and four answers",
+      "options": [
+        "How do writers use conflict to develop characters",
+        "1. To heighten emotion, situations or themes in the story.",
+        "2. To create suspense in the story.",
+        "3. To challenge the character's values or beliefs.",
+        "4. To reveal deeper into the character's motivations or backstory."
+      ],
+      "user_answer": ""
+    },
+    "3": {
+      "topic": "jacket",
+      "question": "What would a coat made of wool be called?",
+      "options": [
+        "a. blanket jacket",
+        "b. belfry jacket",
+        "c. sinker jacket",
+        "d. slope jacket",
+        "e. pile jacket"
+      ],
+      "user_answer": "d. slope jacket"
+    },
+    "4": {
+      "topic": "kite",
+      "question": "Which is the correct principle applicable to a kite moving at high speed in high winds?",
+      "options": [
+        "a) The force of the wind on it is equivalent to the tension between the string and the kite.",
+        "b) The force of the wind is equal to the weight of the kite.",
+        "c) The force of the wind is equal to the tension of the string and the kite.",
+        "d) The force of the wind is equal to the weight of the kite.",
+        "e) The strength of the wind is not significant at extremely high speeds."
+      ],
+      "user_answer": "c) The force of the wind is equal to the tension of the string and the kite."
+    },
+    "5": {
+      "topic": "one",
+      "question": "answer",
+      "options": [
+        "Question: An orde with a rigid wall of core Oh no, we can't say it's a rigid wall of core",
+        "Answer: nitrogen",
+        "Distractors:",
+        "1. hydrogen",
+        "2. oxygen"
+      ],
+      "user_answer": "Distractors:"
+    },
+    "6": {
+      "topic": "earth",
+      "question": "\u2019s energy",
+      "options": [
+        "Its energy comes from sunlight, and oxygen, the elements that make up the planet."
+      ],
+      "user_answer": ""
+    },
+    "7": {
+      "topic": "rotate",
+      "question": "Question: When does a child need to be vaccinated against diphtheria?",
+      "options": [
+        "a. as soon as he turns 1 year old",
+        "b. once in two weeks",
+        "c. once in a month",
+        "d. once every three months",
+        "e. depending on the country and disease",
+        "1. A toddler still gets diseases at the age of 1 so at least one dose of vaccine should be administered.",
+        "2. With diphtheria, the vaccine is given once in two week intervals.",
+        "3. In diphtheria, the vaccine we give is once in a month.",
+        "4. In diphtheria, the vaccine is given once every three months.",
+        "5. It depends on the country"
+      ],
+      "user_answer": ""
+    },
+    "8": {
+      "topic": "disease",
+      "question": "Question: What is the most common cause of premature ejaculation?",
+      "options": [
+        "A. Deprivation of oxygen",
+        "B. Lack of blood flow",
+        "C. Cell damage",
+        "D. Prolonged stress"
+      ],
+      "user_answer": ""
+    },
+    "9": {
+      "topic": "study",
+      "question": "Question: During active cytomegalovirus replication, the virus stimulates human fibroblasts to produce",
+      "options": [
+        "a) RNA",
+        "b) protein",
+        "c) DNA",
+        "d) none of these"
+      ],
+      "user_answer": "b) protein"
+    },
+    "10": {
+      "topic": "work",
+      "question": "Question: What can use atomic bombs to cool down a city?",
+      "options": [
+        "1. Hot air",
+        "2. Heat generation",
+        "3. Air distribution",
+        "4. Frozen nitrogen"
+      ],
+      "user_answer": "3. Air distribution"
+    },
+    "11": {
+      "topic": "science",
+      "question": "quiz",
+      "options": [
+        "Question: A cluster is a type of lake?",
+        "a) Crater",
+        "b) Coral",
+        "c) Marsh",
+        "d) Pond",
+        "e) Rainforest"
+      ],
+      "user_answer": ""
+    },
+    "12": {
+      "topic": "physics",
+      "question": "If you throw a heavy object with a very heavy force,",
+      "options": [
+        "the object is accelerated",
+        "when it strikes the ground",
+        "microgravity",
+        "the object is not accelerated",
+        "it moves through air with no force",
+        "it is accelerated"
+      ],
+      "user_answer": "the object is not accelerated"
+    },
+    "13": {
+      "topic": "cure",
+      "question": ":",
+      "options": [
+        "Which of the following methods is considered a typically corrective method of treatment?",
+        "a) behavior therapy",
+        "b) birth control",
+        "c) insulin therapy",
+        "d) vaccination",
+        "e) punishment"
+      ],
+      "user_answer": "c) insulin therapy"
+    },
+    "14": {
+      "topic": "water",
+      "question": "solubility",
+      "options": [
+        "Question: How many grams of carbon dioxide is dissolved per kilogram of water at 43 \u00b0C and 4.75 psia?",
+        "Answer: 42.3 grams",
+        "Distractors:",
+        "1. 10 grams",
+        "2. 15 grams",
+        "3. 20 grams"
+      ],
+      "user_answer": "1. 10 grams"
+    },
+    "15": {
+      "topic": "door",
+      "question": "#2",
+      "options": [
+        "1. In the statement, abowl is without a bowl",
+        "2.  bowl is without a bowl"
+      ],
+      "user_answer": ""
+    },
+    "16": {
+      "topic": "food",
+      "question": "circle",
+      "options": [
+        "Question: Who and where was the vegetarian dish invented?",
+        "A. Durstenfeld",
+        "B. Florence",
+        "C. Sodex",
+        "D. France"
+      ],
+      "user_answer": "C. Sodex"
+    },
+    "17": {
+      "topic": "second",
+      "question": "Taking the following text",
+      "options": [
+        "text = \"This text is in plain Latin\"",
+        "<text>",
+        "This text is in plain Latin.",
+        "</text>",
+        "import re",
+        "transforms = re.compile(\"<text> {1}')",
+        "text = transforms.substitute(\"<text> {0}\", \".\")",
+        "print(text)",
+        "Output:",
+        "This text is in plain Latin.",
+        "import re",
+        "transforms = re.compile(\"<text> {1}'"
+      ],
+      "user_answer": ""
+    },
+    "18": {
+      "topic": "code",
+      "question": "about mutation",
+      "options": [
+        "take Int",
+        "mutation {i: i - 1 }",
+        "Ans: - i = i + 1;",
+        "I: subtract 1",
+        "I: subtract 1 plus 1",
+        "I: i = i + 1;",
+        "J: i++",
+        "J: i++",
+        "J: i++",
+        "J: i++"
+      ],
+      "user_answer": "J: i++"
+    },
+    "19": {
+      "topic": "huge",
+      "question": "bodies of water",
+      "options": [
+        "1. Lake Superior",
+        "2. North Atlantic Ocean",
+        "3. Arctic Ocean",
+        "4. Pacific Ocean",
+        "1. Gobi desert",
+        "2.,coxcomb-shaped lake",
+        "3., hot-spot",
+        "4., field of acid"
+      ],
+      "user_answer": "4. Pacific Ocean"
+    }
+  }
