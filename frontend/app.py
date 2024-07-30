@@ -15,7 +15,7 @@ if 'selected_option' not in st.session_state:
 
 # Button to generate MCQ
 if st.button("Generate MCQ"):
-    response = requests.post("http://34.211.200.85:10000/generate/", json={"topic": topic})
+    response = requests.post("https://backend-app1-0icr.onrender.com/generate/", json={"topic": topic})
     if response.status_code == 200:
         st.session_state.question_data = response.json()
         st.write("Question:", st.session_state.question_data["question"])
@@ -35,7 +35,7 @@ if st.session_state.question_data:
     if st.button("Submit Answer"):
         if st.session_state.selected_option:
             question_id = st.session_state.question_data["id"]
-            submit_response = requests.post("http://34.211.200.85:10000/submit_answer/", json={
+            submit_response = requests.post("https://backend-app1-0icr.onrender.com/generate//submit_answer/", json={
                 "question_id": question_id,
                 "answer": st.session_state.selected_option
             })
