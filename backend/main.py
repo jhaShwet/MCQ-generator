@@ -65,6 +65,9 @@ def search_duckduckgo(query: str):
         print(f"Request error: {e}")
         raise HTTPException(status_code=500, detail=f"Request failed: {e}")
 
+@app.get("/")
+async def read_root():
+    return {"message": "Welcome to the MCQ application API"}
 
 @app.post("/generate/")
 async def generate_content(query: Query):
