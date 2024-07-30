@@ -35,7 +35,7 @@ if st.session_state.question_data:
     if st.button("Submit Answer"):
         if st.session_state.selected_option:
             question_id = st.session_state.question_data["id"]
-            submit_response = requests.post("http://127.0.0.1:8000/submit_answer/", json={
+            submit_response = requests.post("http://34.211.200.85:10000/submit_answer/", json={
                 "question_id": question_id,
                 "answer": st.session_state.selected_option
             })
