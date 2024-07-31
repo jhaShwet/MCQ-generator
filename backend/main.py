@@ -8,24 +8,31 @@ from langchain_community.tools import DuckDuckGoSearchRun
 app = FastAPI()
 
 # File-based storage path
-DB_FILE = 'mcq_data.json'
+DB_FILE = os.path.join(os.path.dirname(__file__), 'mcq_data.json')
 
 def load_data():
     if os.path.exists(DB_FILE):
+        print(f"Loading data from {DB_FILE}")
         try:
             with open(DB_FILE, 'r', encoding='utf-8') as f:
                 return json.load(f)
         except (UnicodeDecodeError, json.JSONDecodeError) as e:
             print(f"Error loading JSON data: {e}")
             return {}
+    else:
+        print(f"{DB_FILE} does not exist")
     return {}
 
+
 def save_data(data):
+    # print("Saving data:", data)  # Check what data is being saved
     try:
         with open(DB_FILE, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2)
+        print("Data saved successfully")
     except IOError as e:
         print(f"Error saving JSON data: {e}")
+
 
 questions_db = load_data()
 
