@@ -21,7 +21,6 @@ if st.button("Generate MCQ"):
         st.write("Question:", st.session_state.question_data["question"])
         options = st.session_state.question_data["options"]
         st.session_state.selected_option = None  # Reset selected option
-
     else:
         st.write("Error:", response.json().get("detail", "Unknown error"))
 
