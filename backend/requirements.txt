@@ -3,3 +3,4 @@ uvicorn
 pydantic
 requests
 duckduckgo-search
+langchain_community
