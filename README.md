@@ -13,9 +13,9 @@ MCQ Generator is a web application that lets users generate multiple-choice ques
     - API Endpoints: Configure the requests on Postman.
 
       - Root Endpoint
-      - Generate MCQ : curl -X POST "https://backend-app1-0icr.onrender.com/generate/" -H "Content-Type: application/json" -d '{"topic": "Python"}'
-      - Search Content : curl -X POST "https://backend-app1-0icr.onrender.com/search/" -H "Content-Type: application/json" -d '{"topic": "Python"}'
-      - Submit Answer : curl -X POST "https://backend-app1-0icr.onrender.com/submit_answer/" -H "Content-Type: application/json" -d ' {"question_id": 1, "answer": "A"}'
+      - Generate MCQ : curl -X POST "https://https://mcq-backend-test.onrender.com/generate/" -H "Content-Type: application/json" -d '{"topic": "Python"}'
+      - Search Content : curl -X POST "https://https://mcq-backend-test.onrender.com/search/" -H "Content-Type: application/json" -d '{"topic": "Python"}'
+      - Submit Answer : curl -X POST "https://mcq-backend-test.onrender.com/submit_answer/" -H "Content-Type: application/json" -d ' {"question_id": 1, "answer": "A"}'
 
  # Frontend: https://frontend-app5.onrender.com
 
