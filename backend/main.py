@@ -3,12 +3,12 @@ from pydantic import BaseModel
 import json
 import os
 import requests
+from langchain_community.tools import DuckDuckGoSearchRun
 
 app = FastAPI()
 
 # File-based storage path
 DB_FILE = 'mcq_data.json'
-
 
 def load_data():
     if os.path.exists(DB_FILE):
@@ -20,7 +20,6 @@ def load_data():
             return {}
     return {}
 
-
 def save_data(data):
     try:
         with open(DB_FILE, 'w', encoding='utf-8') as f:
@@ -28,42 +27,22 @@ def save_data(data):
     except IOError as e:
         print(f"Error saving JSON data: {e}")
 
-
 questions_db = load_data()
-
 
 def get_next_id(data):
     numeric_keys = [int(key) for key in data.keys() if key.isdigit()]
     return max(numeric_keys, default=0) + 1
 
-
 next_id = get_next_id(questions_db)
-
 
 class Query(BaseModel):
     topic: str
-
 
 class UserAnswer(BaseModel):
     question_id: int
     answer: str
 
-
-def search_duckduckgo(query: str):
-    url = "https://api.duckduckgo.com/"
-    params = {
-        "q": query,
-        "format": "json",
-        "no_html": 1
-    }
-    try:
-        response = requests.get(url, params=params)
-        response.raise_for_status()
-        data = response.json()
-        return data.get('RelatedTopics', [])
-    except requests.RequestException as e:
-        print(f"Request error: {e}")
-        raise HTTPException(status_code=500, detail=f"Request failed: {e}")
+search = DuckDuckGoSearchRun()
 
 @app.get("/")
 async def read_root():
@@ -73,8 +52,7 @@ async def read_root():
 async def generate_content(query: Query):
     ai21_api_key = os.getenv('AI21_API_KEY')
     if not ai21_api_key:
-        raise HTTPException(status_code=500,
-                            detail="AI21 API key not set. Please set the environment variable 'AI21_API_KEY'.")
+        raise HTTPException(status_code=500, detail="AI21 API key not set. Please set the environment variable 'AI21_API_KEY'.")
 
     url = "https://api.ai21.com/studio/v1/j2-large/complete"
     headers = {
@@ -88,9 +66,8 @@ async def generate_content(query: Query):
     }
 
     try:
-        response = requests.post(url, headers=headers, json=payload, verify=False)
+        response = requests.post(url, headers=headers, json=payload)
         response.raise_for_status()
-
         result = response.json()
         print("Parsed JSON result:", result)
 
@@ -131,16 +108,14 @@ async def generate_content(query: Query):
         print(f"Key error: {e}")
         raise HTTPException(status_code=500, detail=f"Key error: {e}")
 
-
 @app.post("/search/")
 async def search_content(query: Query):
     try:
-        results = search_duckduckgo(query.topic)
+        results = search.invoke(query.topic)
         return {"results": results}
     except Exception as e:
         print(f"Error: {e}")
         raise HTTPException(status_code=500, detail=f"An error occurred: {e}")
-
 
 @app.post("/submit_answer/")
 async def submit_answer(user_answer: UserAnswer):
