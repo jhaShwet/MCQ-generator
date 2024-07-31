@@ -4,7 +4,7 @@ MCQ Generator is a web application that lets users generate multiple-choice ques
 
 # Tech Stack
 
-   # Backend: https://backend-app1-0icr.onrender.com
+   # Backend: https://mcq-backend-test.onrender.com
 
     - FastAPI: High-performance web framework for APIs.
     - Uvicorn: ASGI server for FastAPI.
